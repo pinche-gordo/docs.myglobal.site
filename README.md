@@ -29,4 +29,4 @@ Run `npm install`, then `npm run dev`. Create a production build with `npm run b
 
 ## Current state
 
-The user reports that `docs.myglobal.site` points to aaPanel. The site is not ready to deploy until DNS, its web-server configuration, document root, and HTTPS are verified. This directory is an independent local Git repository on `main`, with no remote or commits yet. The bilingual Starlight site builds locally; section pages are navigation scaffolds pending verification and writing of product workflows.
+The user reports that `docs.myglobal.site` points to aaPanel. The site is not ready to deploy until DNS, its web-server configuration, document root, and HTTPS are verified. This project is maintained in the public GitHub repository on the `main` branch. The bilingual Starlight site builds locally; section pages are navigation scaffolds pending verification and writing of product workflows.
