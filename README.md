@@ -1,32 +1,18 @@
 # docs.myglobal.site
 
-Public, screenshot-based user documentation for MYGLOBAL.site, built with Astro Starlight and intended for `https://docs.myglobal.site/`. Spanish (Mexico) is the default at `/`; English (United States) is available at `/en/`.
+The public user guide for the MYGLOBAL.site platform. It helps members, consumers, and merchants understand platform features, make informed choices, and follow practical guidance. The documentation is available in Spanish at [docs.myglobal.site](https://docs.myglobal.site/) and in English at [docs.myglobal.site/en](https://docs.myglobal.site/en/).
 
-## Project structure
+## What the guide covers
 
-- `src/content/docs/` contains the Spanish pages.
-- `src/content/docs/en/` contains corresponding English pages. Keep translated pages on matching paths so Starlight can associate them.
-- `src/content/docs/<section>/` holds pages for a section; place page-specific screenshots next to the relevant content and reference them with relative paths.
-- `astro.config.mjs` configures the locales, localized sidebar, and public hostname.
+- Getting started with MYGLOBAL.site.
+- Member dashboard and workspaces, including profile, connected groups, operations, insights, wallet and items, and rewards.
+- Agora member tools and entitlements, including booking, menus, products, services, subscriptions, real estate, access passes, and digital collectibles.
+- Consumer guidance and general help as those sections are expanded.
 
-## Access and content boundaries
+## Who can use it
 
-The guide is public and can be read without a MYGLOBAL account. Public pages can also serve as a curated source for search and AI assistants. Starlight generates a static documentation site; role-based access and MYGLOBAL SSO are not provided by Starlight. If private, role-gated documentation is needed, design and verify that separately at the hosting or identity layer before publishing any restricted material.
+The guide is public and does not require a MYGLOBAL.site account. Its clear, text-based pages are intended to help people and AI assistants find and understand platform guidance.
 
-Use demonstration data in screenshots. Check for names, email addresses, wallet details, referral codes, QR codes, and other account-specific information before publishing. Add useful alt text and keep essential instructions in text.
+## Feature availability
 
-## Analytics and chat configuration
-
-Matomo and Chatwoot settings are loaded from `public/runtime-config.js`, which is ignored by Git. Start from `config/runtime-config.example.js`, copy it to `public/runtime-config.js`, and set the site-specific values before building or deploying. Keep deployment-specific settings out of the repository. The Matomo site ID and Chatwoot website token are browser-visible identifiers, so they are not server-side secrets even though their source configuration is excluded from Git.
-
-## Source of truth
-
-This repository is canonical for the published guide and documentation-site configuration. Verify product behavior against the owning product code and tests. Obsidian holds project context and links here; it should not duplicate the public guide.
-
-## Local preview
-
-Run `npm install`, then `npm run dev`. Create a production build with `npm run build`.
-
-## Current state
-
-The user reports that `docs.myglobal.site` points to aaPanel. The site is not ready to deploy until DNS, its web-server configuration, document root, and HTTPS are verified. This project is maintained in the public GitHub repository on the `main` branch. The bilingual Starlight site builds locally; section pages are navigation scaffolds pending verification and writing of product workflows.
+Available features can depend on a member's role, plan, or the services enabled for their account. The guide identifies important limitations and indicates when a feature is still in development. Check the relevant guide before relying on a workflow or assuming that an option is available to every account.
