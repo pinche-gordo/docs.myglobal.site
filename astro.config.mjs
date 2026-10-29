@@ -11,6 +11,13 @@ export default defineConfig({
         root: { label: 'Español', lang: 'es-MX' },
         en: { label: 'English', lang: 'en-US' },
       },
+      social: [
+        {
+          icon: 'github',
+          label: 'GitHub',
+          href: 'https://github.com/pinche-gordo/docs.myglobal.site',
+        },
+      ],
       head: [
         { tag: 'script', attrs: { src: '/runtime-config.js', defer: true } },
         { tag: 'script', attrs: { src: '/matomo-init.js', defer: true } },
