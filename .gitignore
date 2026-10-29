@@ -24,3 +24,6 @@ secrets/
 *.sqlite3
 *.db
 .npmrc
+
+# Local deployment release bundles; do not commit runtime configuration.
+.release-artifacts/
