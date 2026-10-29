@@ -1,0 +1,26 @@
+node_modules/
+.astro/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+npm-debug.log*
+
+# Local service identifiers/configuration; generated at deploy time.
+/public/runtime-config.js
+
+# Private credentials, certificates, and local data.
+.secrets/
+secrets/
+*.secret
+*.secrets
+*.pem
+*.key
+*.p12
+*.pfx
+*.dump
+*.sqlite
+*.sqlite3
+*.db
+.npmrc
