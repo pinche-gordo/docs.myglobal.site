@@ -17,8 +17,27 @@ export default defineConfig({
           label: 'GitHub',
           href: 'https://github.com/pinche-gordo/docs.myglobal.site',
         },
+        {
+          icon: 'facebook',
+          label: 'Facebook',
+          href: 'https://www.facebook.com/MYGLOBAL.site',
+        },
+        {
+          icon: 'mastodon',
+          label: 'Mastodon',
+          href: 'https://social.myglobal.site/@myglobal_site',
+        },
+        {
+          icon: 'external',
+          label: 'MYGLOBAL.site',
+          href: 'https://www.myglobal.site/',
+        },
       ],
       head: [
+        { tag: 'meta', attrs: { property: 'og:image', content: 'https://docs.myglobal.site/og-image.png' } },
+        { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' } },
+        { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
+        { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://docs.myglobal.site/og-image.png' } },
         { tag: 'script', attrs: { src: '/runtime-config.js', defer: true } },
         { tag: 'script', attrs: { src: '/matomo-init.js', defer: true } },
         { tag: 'script', attrs: { src: '/analytics-consent.js', defer: true } },
